@@ -25,8 +25,8 @@ public class CustomerService {
 
     public Customer findCustomer(int id) {
         try {
-            return repository.findById(id);
-        } catch (EmptyResultDataAccessException e) {
+            return repository.findById(id).get();
+        } catch (NoSuchElementException e) {
             return null;
         }
     }
@@ -51,4 +51,3 @@ public class CustomerService {
         return BCrypt.hashpw(pin, salt);
     }
 }
-
