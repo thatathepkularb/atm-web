@@ -1,9 +1,14 @@
 package th.ac.ku.atm.model;
 
+
+
 public class Customer {
+
     private int id;
+
     private String name;
     private String pin;
+    
 
     public Customer(int id, String name, String pin) {
         this.id = id;
@@ -35,4 +40,5 @@ public class Customer {
         this.pin = pin;
     }
 }
+
 
