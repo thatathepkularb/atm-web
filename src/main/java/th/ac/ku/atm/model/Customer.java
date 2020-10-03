@@ -5,13 +5,10 @@ import javax.persistence.Id;
 
 @Entity
 public class Customer {
-
     @Id
     private int id;
-
     private String name;
     private String pin;
-
     public Customer() {}
 
     public Customer(int id, String name, String pin) {
@@ -52,7 +49,4 @@ public class Customer {
                 ", pin='" + pin + '\'' +
                 '}';
     }
-
 }
-
-
