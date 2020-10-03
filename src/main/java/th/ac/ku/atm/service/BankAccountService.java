@@ -11,7 +11,7 @@ import java.util.List;
 
 @Service
 public class BankAccountService {
-    private ArrayList<BankAccount> bacnkAccountList = new ArrayList<>();
+    private ArrayList<BankAccount> bankAccountList = new ArrayList<>();
 
     private RestTemplate restTemplate;
 
@@ -54,7 +54,7 @@ public class BankAccountService {
 
 
     public void createBankAccount(BankAccount bankAccount) {
-        bacnkAccountList.add(bankAccount);
+        bankAccountList.add(bankAccount);
     }
 
     public List<BankAccount> getBankAccounts() {
